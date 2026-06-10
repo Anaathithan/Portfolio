@@ -276,31 +276,54 @@ document.addEventListener('DOMContentLoaded', () => {
             const originalBtnText = submitBtn.innerHTML;
             submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
 
-            // Simulate form submission to backend (API post simulation)
-            setTimeout(() => {
-                // Success path
+            // Gather form data
+            const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            // Submit form to Web3Forms API
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                const result = await response.json();
+                if (response.status === 200) {
+                    // Success path
+                    successAlert.style.display = 'flex';
+                    contactForm.reset();
+                    
+                    // Smoothly fade out success alert after 5 seconds
+                    setTimeout(() => {
+                        successAlert.style.opacity = '0';
+                        successAlert.style.transition = 'opacity 0.5s ease';
+                        setTimeout(() => {
+                            successAlert.style.display = 'none';
+                            successAlert.style.opacity = '1';
+                        }, 500);
+                    }, 5000);
+                } else {
+                    console.error(result);
+                    errorAlert.innerHTML = `<i class="fas fa-exclamation-circle"></i> ${result.message || 'Error! Please check your form fields and try again.'}`;
+                    errorAlert.style.display = 'flex';
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                errorAlert.innerHTML = '<i class="fas fa-exclamation-circle"></i> Connection error. Please try again later.';
+                errorAlert.style.display = 'flex';
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;
-                
-                // Show success message
-                successAlert.style.display = 'flex';
-                
-                // Clear all input values
-                contactForm.reset();
-                
-                // Smoothly fade out success alert after 5 seconds
-                setTimeout(() => {
-                    successAlert.style.opacity = '0';
-                    successAlert.style.transition = 'opacity 0.5s ease';
-                    setTimeout(() => {
-                        successAlert.style.display = 'none';
-                        successAlert.style.opacity = '1';
-                    }, 500);
-                }, 5000);
-
-            }, 1800);
+            });
         } else {
             // Form validation failed
+            errorAlert.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error! Please check your form fields and try again.';
             errorAlert.style.display = 'flex';
         }
     });
