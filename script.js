@@ -180,13 +180,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const formFields = {
         name: document.getElementById('form-name'),
         email: document.getElementById('form-email'),
-        subject: document.getElementById('form-subject'),
         message: document.getElementById('form-message')
     };
     const errorMessages = {
         name: document.getElementById('name-error'),
         email: document.getElementById('email-error'),
-        subject: document.getElementById('subject-error'),
         message: document.getElementById('message-error')
     };
     const formFeedback = document.getElementById('formFeedback');
@@ -243,13 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showError('email', false);
         }
 
-        // Subject Validation
-        if (formFields.subject.value.trim() === '') {
-            showError('subject', true);
-            isFormValid = false;
-        } else {
-            showError('subject', false);
-        }
+
 
         // Message Validation
         if (formFields.message.value.trim() === '') {
