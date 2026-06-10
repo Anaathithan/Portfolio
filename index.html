@@ -36,10 +36,12 @@
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#conservation" class="nav-link">Eco Project</a></li>
                     <li class="nav-item"><a href="#lectures" class="nav-link">Lectures</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="./resources/cv_anaathithan.pdf" class="nav-link" download="cv_anaathithan.pdf" id="nav-btn-cv">CV <i class="fas fa-download"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -95,7 +97,7 @@
             </div>
         </section>
 
-        <!-- Section 3: Education -->
+        <!-- Section 2: Education -->
         <section id="education" class="section education-section alternate-bg">
             <div class="container">
                 <div class="section-header">
@@ -108,7 +110,7 @@
                     <!-- Timeline Card -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-date">2026 - Present</div>
                         <div class="timeline-card">
                             <div class="timeline-header">
                                 <h3 class="degree-title">BSc (Hons) Computing</h3>
@@ -136,8 +138,102 @@
             </div>
         </section>
 
-        <!-- Section 5: Lecture Insights -->
-        <section id="lectures" class="section lectures-section">
+        <!-- Section 3: Beach Conservation & Cleanup Project -->
+        <section id="conservation" class="section conservation-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Community & Eco Initiative</span>
+                    <h2 class="section-title">Beach Conservation Project</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="conservation-wrapper">
+                    <!-- Text Description Column -->
+                    <div class="conservation-info">
+                        <h3 class="conservation-subtitle">Panadura Beach Cleanup & Turtle Protection</h3>
+                        <p class="conservation-desc">
+                            Panadura Beach is a vital coastal habitat in Sri Lanka, recognized as a nesting ground for endangered sea turtles. Unfortunately, marine debris and garbage severely threaten this delicate ecosystem. To address this, we organized a collaborative team project to clean the shorelines and support the local marine preservation center.
+                        </p>
+                        <div class="conservation-details-list">
+                            <div class="conservation-detail-item">
+                                <div class="detail-icon"><i class="fas fa-trash-restore"></i></div>
+                                <div class="detail-text">
+                                    <h4>Beach Cleanup Campaign</h4>
+                                    <p>Gathered plastic wastes, fishing nets, and non-biodegradable debris to restore the beach's natural state.</p>
+                                </div>
+                            </div>
+                            <div class="conservation-detail-item">
+                                <div class="detail-icon"><i class="fas fa-shield-dog"></i></div>
+                                <div class="detail-text">
+                                    <h4>Turtle Nesting Protection</h4>
+                                    <p>Cleared obstructions along nesting paths to ensure mother turtles can safely lay eggs and hatchlings can reach the sea.</p>
+                                </div>
+                            </div>
+                            <div class="conservation-detail-item">
+                                <div class="detail-icon"><i class="fas fa-hands-helping"></i></div>
+                                <div class="detail-text">
+                                    <h4>Preservation Center Collaboration</h4>
+                                    <p>Assisted the preservation center team in cleaning turtle tanks, organizing hatchery areas, and carrying out essential daily tasks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Media Showcase Column -->
+                    <div class="conservation-media">
+                        <!-- Combined Media Slideshow Container -->
+                        <div class="slideshow-container combined-slideshow">
+                            <!-- Video Slide -->
+                            <div class="slideshow-slide active video-slide" data-type="video">
+                                <div class="video-container">
+                                    <video class="cleanup-video" controls poster="./images/Pic 1.jpeg" preload="metadata">
+                                        <source src="./images/PS Project.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="video-overlay-play">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Image Slides -->
+                            <div class="slideshow-slide image-slide" data-type="image">
+                                <img src="./images/Pic 1.jpeg" alt="Panadura Beach Cleanup Pic 1">
+                            </div>
+                            <div class="slideshow-slide image-slide" data-type="image">
+                                <img src="./images/Pic 2.jpeg" alt="Panadura Beach Cleanup Pic 2">
+                            </div>
+                            <div class="slideshow-slide image-slide" data-type="image">
+                                <img src="./images/Pic 3.jpeg" alt="Panadura Beach Cleanup Pic 3">
+                            </div>
+                            <div class="slideshow-slide image-slide" data-type="image">
+                                <img src="./images/Pic 4.jpeg" alt="Panadura Beach Cleanup Pic 4">
+                            </div>
+                            <div class="slideshow-slide image-slide" data-type="image">
+                                <img src="./images/Pic 5.jpeg" alt="Panadura Beach Cleanup Pic 5">
+                            </div>
+                            
+                            <!-- Navigation Arrows -->
+                            <button class="slide-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slide-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                            
+                            <!-- Indicators (Dots) -->
+                            <div class="slideshow-dots">
+                                <span class="slide-dot active" data-index="0"></span>
+                                <span class="slide-dot" data-index="1"></span>
+                                <span class="slide-dot" data-index="2"></span>
+                                <span class="slide-dot" data-index="3"></span>
+                                <span class="slide-dot" data-index="4"></span>
+                                <span class="slide-dot" data-index="5"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Lecture Insights -->
+        <section id="lectures" class="section lectures-section alternate-bg">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tagline">Academic Seminars</span>
@@ -307,7 +403,109 @@
             </div>
         </section>
 
-        <!-- Section 2: Technical Skills -->
+        <!-- Section 5: Project Experience -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Portfolio Showcase</span>
+                    <h2 class="section-title">Project Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: MotoStock26 -->
+                    <div class="project-card">
+                        <div class="project-card-banner">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
+                            <span class="project-date">2024 - 2025</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-motostock">MotoStock26</h3>
+                            <span class="project-role">Full-Stack Web Developer (University Group Project)</span>
+                            <p class="project-description">
+                                A collaborative full-stack web application designed for a motorcycle parts inventory and account system. Collaborated actively in a team using Git and GitHub for version control.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Implemented full User & Account Management module.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Integrated robust Role-Based Access Control (RBAC) schemas.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Built secure session management mechanisms utilizing PHP and mysqli.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Deployed the live web app on InfinityFree server environments.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Formulated test cases and performed complete QA cycle validations.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>HTML5/CSS3</span>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Web Security Analysis -->
+                    <div class="project-card">
+                        <div class="project-card-banner banner-security">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-security">Web Security Analysis</h3>
+                            <span class="project-role">Security Lead / Analyst</span>
+                            <p class="project-description">
+                                A comprehensive vulnerability assessment of target web systems, focusing on modern threats and risk evaluation.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Performed extensive web vulnerability scanning using OWASP ZAP (active & passive scanning).</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Identified security flaws, SQL injections, XSS vulnerabilities, and misconfigured headers.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Authored a formal, industry-standard Web Security Vulnerability Assessment report.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Evaluated findings and mapped critical risk mitigations using ISO 27001 control frameworks.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>OWASP ZAP</span>
+                                <span>ISO 27001</span>
+                                <span>Web Security</span>
+                                <span>Vulnerability Scanning</span>
+                                <span>QA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: BookNook -->
+                    <div class="project-card">
+                        <div class="project-card-banner banner-android">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fab fa-android"></i></div>
+                            <span class="project-date">2023 - 2024</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-booknook">BookNook</h3>
+                            <span class="project-role">Android Application Developer</span>
+                            <p class="project-description">
+                                A personal development project targeting mobile platforms to provide users with an elegant ebook library, progress tracking, and reader community features.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Developed a native Android application interface from scratch using Java.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Integrated Google Firebase for authentication, real-time database, and cloud storage.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Created a fluid book browsing interface with offline caching behaviors.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Implemented personalized user bookshelves and automated reading statistics tracking.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>Android (Java)</span>
+                                <span>Firebase Auth</span>
+                                <span>Realtime Database</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Technical Skills -->
         <section id="skills" class="section skills-section alternate-bg">
             <div class="container">
                 <div class="section-header">
@@ -457,113 +655,7 @@
             </div>
         </section>
 
-
-
-        <!-- Section 4: Project Experience -->
-        <section id="projects" class="section projects-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tagline">Portfolio Showcase</span>
-                    <h2 class="section-title">Project Experience</h2>
-                    <div class="title-underline"></div>
-                </div>
-                
-                <div class="projects-grid">
-                    
-                    <!-- Project 1: MotoStock26 -->
-                    <div class="project-card">
-                        <div class="project-card-banner">
-                            <div class="project-banner-overlay"></div>
-                            <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
-                            <span class="project-date">2024 - 2025</span>
-                        </div>
-                        <div class="project-card-content">
-                            <h3 class="project-name" id="project-motostock">MotoStock26</h3>
-                            <span class="project-role">Full-Stack Web Developer (University Group Project)</span>
-                            <p class="project-description">
-                                A collaborative full-stack web application designed for a motorcycle parts inventory and account system. Collaborated actively in a team using Git and GitHub for version control.
-                            </p>
-                            <ul class="project-bullets">
-                                <li><i class="fas fa-check-circle text-accent"></i> Implemented full User & Account Management module.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Integrated robust Role-Based Access Control (RBAC) schemas.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Built secure session management mechanisms utilizing PHP and mysqli.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Successfully deployed the live web app on InfinityFree server environments.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Formulated test cases and performed complete QA cycle validations.</li>
-                            </ul>
-                            <div class="project-tech-tags">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>JavaScript</span>
-                                <span>HTML5/CSS3</span>
-                                <span>GitHub</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 2: Web Security Analysis -->
-                    <div class="project-card">
-                        <div class="project-card-banner banner-security">
-                            <div class="project-banner-overlay"></div>
-                            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
-                            <span class="project-date">2024</span>
-                        </div>
-                        <div class="project-card-content">
-                            <h3 class="project-name" id="project-security">Web Security Analysis</h3>
-                            <span class="project-role">Security Lead / Analyst</span>
-                            <p class="project-description">
-                                A comprehensive vulnerability assessment of target web systems, focusing on modern threats and risk evaluation.
-                            </p>
-                            <ul class="project-bullets">
-                                <li><i class="fas fa-check-circle text-accent"></i> Performed extensive web vulnerability scanning using OWASP ZAP (active & passive scanning).</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Identified security flaws, SQL injections, XSS vulnerabilities, and misconfigured headers.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Authored a formal, industry-standard Web Security Vulnerability Assessment report.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Evaluated findings and mapped critical risk mitigations using ISO 27001 control frameworks.</li>
-                            </ul>
-                            <div class="project-tech-tags">
-                                <span>OWASP ZAP</span>
-                                <span>ISO 27001</span>
-                                <span>Web Security</span>
-                                <span>Vulnerability Scanning</span>
-                                <span>QA</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 3: BookNook -->
-                    <div class="project-card">
-                        <div class="project-card-banner banner-android">
-                            <div class="project-banner-overlay"></div>
-                            <div class="project-icon"><i class="fab fa-android"></i></div>
-                            <span class="project-date">2023 - 2024</span>
-                        </div>
-                        <div class="project-card-content">
-                            <h3 class="project-name" id="project-booknook">BookNook</h3>
-                            <span class="project-role">Android Application Developer</span>
-                            <p class="project-description">
-                                A personal development project targeting mobile platforms to provide users with an elegant ebook library, progress tracking, and reader community features.
-                            </p>
-                            <ul class="project-bullets">
-                                <li><i class="fas fa-check-circle text-accent"></i> Developed a native Android application interface from scratch using Java.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Integrated Google Firebase for authentication, real-time database, and cloud storage.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Created a fluid book browsing interface with offline caching behaviors.</li>
-                                <li><i class="fas fa-check-circle text-accent"></i> Implemented personalized user bookshelves and automated reading statistics tracking.</li>
-                            </ul>
-                            <div class="project-tech-tags">
-                                <span>Android (Java)</span>
-                                <span>Firebase Auth</span>
-                                <span>Realtime Database</span>
-                                <span>UI/UX</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Section 6: Contact & Footer -->
+        <!-- Section 7: Contact & Footer -->
         <section id="contact" class="section contact-section">
             <div class="container">
                 <div class="section-header">
@@ -682,6 +774,14 @@
                     <!-- Populated dynamically via JS -->
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close lightbox">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
         </div>
     </div>
 

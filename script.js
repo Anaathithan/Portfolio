@@ -320,4 +320,147 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    /* --- Lightbox Modal --- */
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+    const lightboxImage = document.getElementById('lightboxImage');
+    
+    function closeLightbox() {
+        lightboxModal.classList.remove('open');
+        document.body.style.overflow = ''; // Restore main page scrolling
+    }
+    
+    lightboxCloseBtn.addEventListener('click', closeLightbox);
+    
+    lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+            closeLightbox();
+        }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('open')) {
+            closeLightbox();
+        }
+    });
+
+    /* --- Conservation Combined Slideshow --- */
+    const slides = document.querySelectorAll('.slideshow-slide');
+    const dots = document.querySelectorAll('.slide-dot');
+    const prevBtn = document.querySelector('.slide-prev');
+    const nextBtn = document.querySelector('.slide-next');
+    const video = document.querySelector('.cleanup-video');
+    const videoContainer = document.querySelector('.video-container');
+    let currentSlide = 0;
+    let slideshowInterval = null;
+
+    function showSlide(index) {
+        // Pause video if we are navigating away from it
+        if (slides[currentSlide].getAttribute('data-type') === 'video' && video) {
+            video.pause();
+        }
+
+        // Remove active class from current slide & dot
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        
+        currentSlide = (index + slides.length) % slides.length;
+        
+        // Add active class to new slide & dot
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+
+        // Handle autoplay based on active slide type
+        if (slides[currentSlide].getAttribute('data-type') === 'video') {
+            stopAutoplay();
+        } else {
+            startAutoplay();
+        }
+    }
+
+    function startAutoplay() {
+        if (slideshowInterval) clearInterval(slideshowInterval);
+        
+        // Only autoplay if active slide is NOT a video
+        if (slides[currentSlide].getAttribute('data-type') !== 'video') {
+            slideshowInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 4000);
+        }
+    }
+
+    function stopAutoplay() {
+        if (slideshowInterval) {
+            clearInterval(slideshowInterval);
+            slideshowInterval = null;
+        }
+    }
+
+    if (prevBtn && nextBtn && slides.length > 0) {
+        prevBtn.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.getAttribute('data-index'));
+                showSlide(index);
+            });
+        });
+
+        // Click on image slide to open in lightbox
+        slides.forEach(slide => {
+            if (slide.getAttribute('data-type') === 'image') {
+                slide.addEventListener('click', (e) => {
+                    // Only open lightbox if they didn't click navigation arrows
+                    if (!e.target.closest('.slide-prev') && !e.target.closest('.slide-next')) {
+                        const img = slide.querySelector('img');
+                        lightboxImage.src = img.src;
+                        lightboxImage.alt = img.alt;
+                        lightboxModal.classList.add('open');
+                        document.body.style.overflow = 'hidden'; // Prevent main page scrolling
+                    }
+                });
+            }
+        });
+
+        // Video play/pause listener for play overlay and slideshow autoplay pausing
+        if (video && videoContainer) {
+            video.addEventListener('play', () => {
+                videoContainer.classList.add('playing');
+                stopAutoplay();
+            });
+            
+            video.addEventListener('pause', () => {
+                videoContainer.classList.remove('playing');
+            });
+            
+            video.addEventListener('ended', () => {
+                videoContainer.classList.remove('playing');
+                // Auto progress to next slide when video ends
+                showSlide(currentSlide + 1);
+            });
+        }
+
+        // Hover events for slideshow container to pause/resume autoplay
+        const slideshowContainer = document.querySelector('.slideshow-container');
+        if (slideshowContainer) {
+            slideshowContainer.addEventListener('mouseenter', () => {
+                stopAutoplay();
+            });
+            slideshowContainer.addEventListener('mouseleave', () => {
+                if (slides[currentSlide].getAttribute('data-type') !== 'video') {
+                    startAutoplay();
+                }
+            });
+        }
+
+        // Start autoplay on load
+        startAutoplay();
+    }
+
 });
