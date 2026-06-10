@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Anaathithan Mahilnamby - Web Developer and IT Undergraduate specializing in Computer Science. Explore projects, technical skills, and educational background.">
+    <title>Anaathithan Mahilnamby | Web Developer & IT Undergraduate Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                Anaathithan<span>.</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <!-- Desktop / Mobile Menu Links -->
+            <nav class="navbar" id="primary-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#lectures" class="nav-link">Lectures</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Section 1: Hero & Professional Profile -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="welcome-tag">Welcome to my Portfolio</span>
+                    <h1 class="hero-name" id="hero-name">Anaathithan Mahilnamby</h1>
+                    <h2 class="hero-title" id="hero-title">Web Developer | <span>IT Undergraduate</span></h2>
+                    <p class="hero-headline" id="hero-headline">
+                        A highly motivated IT undergraduate specializing in Computer Science, with hands-on experience in full-stack web development.
+                    </p>
+                    <p class="hero-subheadline" id="hero-subheadline">
+                        Skilled in building dynamic, responsive web applications using PHP, JavaScript, HTML/CSS and MySQL.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-work">View My Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline" id="hero-btn-contact">Contact Me <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-frame">
+                        <div class="glow-bg"></div>
+                        <img src="./images/Anaathithan Mahilnamby.jpeg" alt="Anaathithan Mahilnamby" class="profile-image" id="profile-image">
+                    </div>
+                    <!-- Hero Quick Contacts -->
+                    <div class="hero-contact-links">
+                        <a href="https://linkedin.com/in/anaathithan" target="_blank" rel="noopener noreferrer" class="hero-contact-link" id="hero-linkedin">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="mailto:anaathithan@gmail.com" class="hero-contact-link" id="hero-email">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="tel:+94779992634" class="hero-contact-link" id="hero-phone">
+                            <i class="fas fa-phone-alt"></i> 0779 992 634
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#education" aria-label="Scroll to Education section">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 3: Education -->
+        <section id="education" class="section education-section alternate-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="education-timeline">
+                    <!-- Timeline Card -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="degree-title">BSc (Hons) Computing</h3>
+                                <h4 class="specialization">Computer Science Specialization</h4>
+                                <span class="university-name"><i class="fas fa-university"></i> University Sri Lanka</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="education-details">
+                                    Currently pursuing an undergraduate degree specializing in Computer Science, building robust foundations in software engineering, system architecture, database design, and web security.
+                                </p>
+                                <h4 class="modules-title">Key Modules Studied:</h4>
+                                <div class="modules-grid">
+                                    <div class="module-item"><i class="fas fa-laptop-code text-accent"></i> Web Application Development</div>
+                                    <div class="module-item"><i class="fas fa-server text-accent"></i> Operating Systems</div>
+                                    <div class="module-item"><i class="fas fa-database text-accent"></i> Database Systems</div>
+                                    <div class="module-item"><i class="fas fa-shield-virus text-accent"></i> Computer Security</div>
+                                    <div class="module-item"><i class="fas fa-network-wired text-accent"></i> Computer Networks</div>
+                                    <div class="module-item"><i class="fas fa-project-diagram text-accent"></i> Data Systems</div>
+                                    <div class="module-item"><i class="fas fa-calculator text-accent"></i> Design & Analysis of Algorithms</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Lecture Insights -->
+        <section id="lectures" class="section lectures-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Academic Seminars</span>
+                    <h2 class="section-title">Lecture Insights</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">A dedicated look at key professional seminars attended during my undergraduate program. Click a lecturer's card to enlarge and view their lectures and insights in a comprehensive profile.</p>
+                </div>
+                
+                <div class="lectures-grid">
+                    
+                    <!-- Lecturer 1: Mrs. Hubika Joshi -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="hubika">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Mrs. Hubika Joshi.jpeg" alt="Mrs. Hubika Joshi" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Mrs. Hubika Joshi</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 1 Lecture</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Emotional Intelligence</h4>
+                                <p class="lecture-detail-notes">
+                                    Learned how emotional intelligence acts as a catalyst for professional growth and leadership. Focused on self-awareness, self-regulation, empathy, active listening, and relationship management techniques in high-pressure team settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lecturer 2: Mrs. Ishara Weerasinghe -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="ishara">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Mrs. Ishara Weerasinghe.jpeg" alt="Mrs. Ishara Weerasinghe" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Mrs. Ishara Weerasinghe</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 5 Lectures</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Employability Skills</h4>
+                                <p class="lecture-detail-notes">
+                                    Understood the core skills required by modern employers. Discussed communication efficiency, adaptability, problem-solving, critical thinking, work ethics, and the alignment of technical expertise with commercial awareness.
+                                </p>
+                            </div>
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">CV Writing</h4>
+                                <p class="lecture-detail-notes">
+                                    Gained insights into constructing a high-impact professional CV. Learned how to highlight relevant technical projects, skills, and academic achievements clearly while keeping the layout concise and ATS-friendly.
+                                </p>
+                            </div>
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Portfolio Writing</h4>
+                                <p class="lecture-detail-notes">
+                                    Explored the best practices for personal branding and digital portfolios. Focused on showcasing code quality, live project links, system documentation, and the presentation of academic credentials in an engaging layout.
+                                </p>
+                            </div>
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Interview Skills</h4>
+                                <p class="lecture-detail-notes">
+                                    Prepared for technical and behavioral interviews. Learned the STAR method (Situation, Task, Action, Result) for structured answering, body language tips, confidence building, and asking insightful post-interview questions.
+                                </p>
+                            </div>
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Telephone Etiquettes</h4>
+                                <p class="lecture-detail-notes">
+                                    Learned the principles of professional telephonic communication. Explored voice modulation, active listening, taking accurate notes, handling client complaints, and maintaining formal language.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lecturer 3: Mr. Nukshan Nismi -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="nukshan">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Mr. Nukshan Nismi.jpeg" alt="Mr. Nukshan Nismi" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Mr. Nukshan Nismi</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 1 Lecture</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Code of Ethics</h4>
+                                <p class="lecture-detail-notes">
+                                    Studied professional codes of conduct and ethical responsibilities in the IT industry. Covered data privacy protection (GDPR basics), intellectual property rights, system security standards, and professional accountability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lecturer 4: Mrs. Maneesha Aishcharya -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="maneesha">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Mrs. Maneesha Aishcharya.jpeg" alt="Mrs. Maneesha Aishcharya" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Mrs. Maneesha Aishcharya</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 1 Lecture</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Negotiation</h4>
+                                <p class="lecture-detail-notes">
+                                    Gained insights into collaborative negotiation strategies. Covered identifying mutual interests, active listening, maintaining professional poise under pressure, and reaching win-win agreements in business contexts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lecturer 5: Ms. Oshini Wimalasena -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="oshini">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Ms. Oshini Wimalasena.jpeg" alt="Ms. Oshini Wimalasena" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Ms. Oshini Wimalasena</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 1 Lecture</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Grooming Etiquettes</h4>
+                                <p class="lecture-detail-notes">
+                                    Focused on professional appearance and grooming standards. Discussed corporate dress codes, personal hygiene, and presenting a polished, confident image that aligns with corporate expectations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lecturer 6: Ms. Samudini Sandalika -->
+                    <div class="lecture-card lecturer-trigger-card" data-lecturer="samudini">
+                        <div class="lecturer-card-inner">
+                            <div class="lecture-image-container">
+                                <img src="./images/Ms. Samudini Sandalika.jpeg" alt="Ms. Samudini Sandalika" class="lecture-image">
+                            </div>
+                            <h3 class="lecturer-name">Ms. Samudini Sandalika</h3>
+                            <span class="lecture-count"><i class="fas fa-book-open text-accent"></i> 1 Lecture</span>
+                            <span class="view-details-btn">View Insights <i class="fas fa-expand-alt"></i></span>
+                        </div>
+                        
+                        <!-- Hidden data content -->
+                        <div class="lecture-details-data" style="display: none;">
+                            <div class="lecture-detail-item">
+                                <h4 class="lecture-topic-title">Dining Etiquettes</h4>
+                                <p class="lecture-detail-notes">
+                                    Learned formal business dining rules. Explored napkin placement, correct utensil usage, general table manners, and how to conduct professional conversations smoothly during formal business dinners.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Technical Skills -->
+        <section id="skills" class="section skills-section alternate-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <!-- Skill Tabs/Filters -->
+                <div class="skills-tabs" id="skills-tabs">
+                    <button class="tab-btn active" data-filter="all">All Skills</button>
+                    <button class="tab-btn" data-filter="frontend">Frontend</button>
+                    <button class="tab-btn" data-filter="backend">Backend</button>
+                    <button class="tab-btn" data-filter="database">Database & Tools</button>
+                    <button class="tab-btn" data-filter="concepts">Core Concepts</button>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    
+                    <!-- Frontend Skills -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h3 class="skill-name">HTML5 / CSS3</h3>
+                        <p class="skill-desc">Semantic page structuring and modern layouts using Flexbox, Grid, and responsive queries.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h3 class="skill-name">JavaScript (ES6+)</h3>
+                        <p class="skill-desc">Dynamic DOM manipulation, asynchronous programming, fetch APIs, and event handling.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <p class="skill-desc">Mobile-first design workflow ensuring flawless rendering across varied viewports.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h3 class="skill-name">Bootstrap</h3>
+                        <p class="skill-desc">Rapid UI prototyping and grid building using Bootstrap component libraries.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <h3 class="skill-name">PHP</h3>
+                        <p class="skill-desc">Server-side logic development, MVC implementation, session processing, and OOP constructs.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h3 class="skill-name">Node.js (Basic)</h3>
+                        <p class="skill-desc">Familiarity with server setup, express routing, and basic package management via npm.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon"><i class="fas fa-cookie-bite"></i></div>
+                        <h3 class="skill-name">Session & Cookie Mgmt</h3>
+                        <p class="skill-desc">Implementing secure sessions, custom timeouts, and token authentication mechanisms.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="skill-name">RESTful APIs</h3>
+                        <p class="skill-desc">Designing, endpoint structuring, and consuming web service APIs using JSON formats.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="skill-name">MySQL / mysqli</h3>
+                        <p class="skill-desc">Relational database schema design, indexing, complex query execution, and secure SQL binding.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-desc">Source control management, branching strategies, code reviews, and team collaborations.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-icon"><i class="fas fa-ethernet"></i></div>
+                        <h3 class="skill-name">Cisco Packet Tracer</h3>
+                        <p class="skill-desc">Designing, configuring, and troubleshooting complex computer network structures.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="skill-name">OWASP ZAP</h3>
+                        <p class="skill-desc">Vulnerability scanning, penetration testing, and analysis of web applications.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3 class="skill-name">RBAC & Auth</h3>
+                        <p class="skill-desc">Role-Based Access Control integration, custom permissions, and user validation cycles.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                        <h3 class="skill-name">MVC Architecture</h3>
+                        <p class="skill-desc">Separating concerns in projects by partitioning into Model, View, and Controller layers.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="skill-name">Agile / Teamwork</h3>
+                        <p class="skill-desc">Participating in sprint cycles, daily standups, and utilizing Jira/GitHub workflows.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 class="skill-name">OOP in PHP & C</h3>
+                        <p class="skill-desc">Object-oriented paradigms including inheritance, polymorphism, encapsulation, and abstraction.</p>
+                        <div class="skill-level-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+
+                </div>
+
+                <!-- Additional Interests -->
+                <div class="additional-interests">
+                    <h3 class="interests-title"><i class="fas fa-star text-accent"></i> Additional Interests</h3>
+                    <div class="interests-tags">
+                        <span class="interest-tag"><i class="fas fa-music"></i> Tamil Music & Western Notation</span>
+                        <span class="interest-tag"><i class="fas fa-code-branch"></i> Open-Source Web Projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Section 4: Project Experience -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Portfolio Showcase</span>
+                    <h2 class="section-title">Project Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: MotoStock26 -->
+                    <div class="project-card">
+                        <div class="project-card-banner">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
+                            <span class="project-date">2024 - 2025</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-motostock">MotoStock26</h3>
+                            <span class="project-role">Full-Stack Web Developer (University Group Project)</span>
+                            <p class="project-description">
+                                A collaborative full-stack web application designed for a motorcycle parts inventory and account system. Collaborated actively in a team using Git and GitHub for version control.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Implemented full User & Account Management module.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Integrated robust Role-Based Access Control (RBAC) schemas.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Built secure session management mechanisms utilizing PHP and mysqli.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Successfully deployed the live web app on InfinityFree server environments.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Formulated test cases and performed complete QA cycle validations.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>HTML5/CSS3</span>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Web Security Analysis -->
+                    <div class="project-card">
+                        <div class="project-card-banner banner-security">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-security">Web Security Analysis</h3>
+                            <span class="project-role">Security Lead / Analyst</span>
+                            <p class="project-description">
+                                A comprehensive vulnerability assessment of target web systems, focusing on modern threats and risk evaluation.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Performed extensive web vulnerability scanning using OWASP ZAP (active & passive scanning).</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Identified security flaws, SQL injections, XSS vulnerabilities, and misconfigured headers.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Authored a formal, industry-standard Web Security Vulnerability Assessment report.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Evaluated findings and mapped critical risk mitigations using ISO 27001 control frameworks.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>OWASP ZAP</span>
+                                <span>ISO 27001</span>
+                                <span>Web Security</span>
+                                <span>Vulnerability Scanning</span>
+                                <span>QA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: BookNook -->
+                    <div class="project-card">
+                        <div class="project-card-banner banner-android">
+                            <div class="project-banner-overlay"></div>
+                            <div class="project-icon"><i class="fab fa-android"></i></div>
+                            <span class="project-date">2023 - 2024</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-name" id="project-booknook">BookNook</h3>
+                            <span class="project-role">Android Application Developer</span>
+                            <p class="project-description">
+                                A personal development project targeting mobile platforms to provide users with an elegant ebook library, progress tracking, and reader community features.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check-circle text-accent"></i> Developed a native Android application interface from scratch using Java.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Integrated Google Firebase for authentication, real-time database, and cloud storage.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Created a fluid book browsing interface with offline caching behaviors.</li>
+                                <li><i class="fas fa-check-circle text-accent"></i> Implemented personalized user bookshelves and automated reading statistics tracking.</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span>Android (Java)</span>
+                                <span>Firebase Auth</span>
+                                <span>Realtime Database</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Section 6: Contact & Footer -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <!-- Contact Info Column -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-desc">
+                            Feel free to reach out to me for project collaborations, web development opportunities, or academic discussions. I am always open to discussing new ideas!
+                        </p>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-item-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:anaathithan@gmail.com" id="contact-email">anaathithan@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                                <div class="contact-item-content">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+94779992634" id="contact-phone">0779 992 634</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="contact-item-content">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/anaathithan" target="_blank" rel="noopener noreferrer" id="contact-linkedin">linkedin.com/in/anaathithan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <!-- Setup your Web3Forms Access Key here to receive real emails in your inbox -->
+                            <input type="hidden" name="access_key" value="da63f1f7-c458-43a0-b227-51d48d07e28b">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Name</label>
+                                <input type="text" id="form-name" name="name" class="form-control" placeholder="Your Name" required>
+                                <span class="error-msg" id="name-error">Name is required</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email</label>
+                                <input type="email" id="form-email" name="email" class="form-control" placeholder="Your Email" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" name="subject" class="form-control" placeholder="Subject" required>
+                                <span class="error-msg" id="subject-error">Subject is required</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                <span class="error-msg" id="message-error">Message cannot be empty</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-feedback" id="formFeedback">
+                                <p class="success-alert"><i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.</p>
+                                <p class="error-alert"><i class="fas fa-exclamation-circle"></i> Error! Please check your form fields and try again.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                Anaathithan<span>.</span>
+            </div>
+            <p class="footer-text">
+                &copy; 2026 Anaathithan Mahilnamby. All Rights Reserved. Designed with a Deep Midnight Blue & Electric Blue theme.
+            </p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/anaathithan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:anaathithan@gmail.com" aria-label="Email Address"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lecturer Details Modal -->
+    <div class="modal-overlay" id="lecturerModal" role="dialog" aria-modal="true" aria-labelledby="modal-lecturer-name">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            
+            <div class="modal-left">
+                <div class="modal-image-container">
+                    <img src="" alt="" id="modal-lecturer-image" class="modal-lecturer-image">
+                </div>
+                <h3 id="modal-lecturer-name" class="modal-lecturer-name"></h3>
+                <span id="modal-lecture-count" class="modal-lecture-count"></span>
+            </div>
+            
+            <div class="modal-right">
+                <h4 class="modal-right-title"><i class="fas fa-graduation-cap text-accent"></i> Lectures & Takeaways</h4>
+                <div id="modal-lectures-list" class="modal-lectures-list">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
