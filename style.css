@@ -4,9 +4,9 @@
 
 /* --- Theme Variables --- */
 :root {
-    --bg-primary: #03091e;      /* Deep Midnight Blue */
-    --bg-secondary: #0a1430;    /* Midnight Navy */
-    --bg-tertiary: #142244;     /* Dark Steel Blue */
+    --bg-primary: #020512;      /* Deep Midnight Blue (Slightly Darker) */
+    --bg-secondary: #060c22;    /* Midnight Navy (Slightly Darker) */
+    --bg-tertiary: #0e1832;     /* Dark Steel Blue (Slightly Darker) */
     --accent: #cbd5e1;          /* Silver Accent */
     --accent-hover: #f1f5f9;    /* Bright Platinum/White */
     --accent-rgb: 203, 213, 225;
@@ -20,7 +20,7 @@
     --text-muted: #94a3b8;
     --border-color: rgba(203, 213, 225, 0.15);
     --border-glow: 0 0 15px rgba(96, 165, 250, 0.25); /* Glowing icy blue shadows */
-    --glass-bg: rgba(10, 20, 48, 0.85);
+    --glass-bg: rgba(6, 12, 34, 0.85);
     --glass-border: rgba(203, 213, 225, 0.15);
     --font-heading: 'Outfit', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -141,7 +141,7 @@ img {
 }
 
 .alternate-bg {
-    background-color: rgba(11, 23, 54, 0.4);
+    background-color: rgba(7, 14, 38, 0.4);
     border-top: 1px solid rgba(203, 213, 225, 0.05);
     border-bottom: 1px solid rgba(203, 213, 225, 0.05);
 }
@@ -234,7 +234,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(3, 9, 30, 0.85);
+    background-color: rgba(2, 5, 18, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(203, 213, 225, 0.05);
@@ -846,12 +846,12 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(3, 9, 30, 0.4);
+    background-color: rgba(2, 5, 18, 0.4);
     transition: var(--transition);
 }
 
 .project-card:hover .project-banner-overlay {
-    background-color: rgba(3, 9, 30, 0.1);
+    background-color: rgba(2, 5, 18, 0.1);
 }
 
 .project-icon {
@@ -870,7 +870,7 @@ img {
     position: absolute;
     top: 16px;
     right: 16px;
-    background-color: rgba(3, 9, 30, 0.85);
+    background-color: rgba(2, 5, 18, 0.85);
     border: 1px solid var(--border-color);
     padding: 4px 12px;
     border-radius: 20px;
@@ -962,7 +962,7 @@ img {
 }
 
 .lecturer-trigger-card {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(27, 46, 79, 0.25) 100%);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(14, 24, 50, 0.25) 100%);
     border: 1.5px solid rgba(203, 213, 225, 0.15);
     border-radius: 16px;
     box-shadow: var(--card-shadow);
@@ -1079,7 +1079,7 @@ img {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, #0c1a30 100%);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #081024 100%);
     border: 1.5px solid rgba(96, 165, 250, 0.25);
     border-radius: 20px;
     width: 100%;
@@ -1103,7 +1103,7 @@ img {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: rgba(3, 9, 30, 0.6);
+    background: rgba(2, 5, 18, 0.6);
     border: 1px solid rgba(203, 213, 225, 0.15);
     color: var(--text-primary);
     width: 40px;
@@ -1134,7 +1134,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(3, 9, 30, 0.5);
+    background-color: rgba(2, 5, 18, 0.5);
     border-right: 1px solid rgba(203, 213, 225, 0.15);
 }
 
@@ -1205,7 +1205,7 @@ img {
 }
 
 .modal-lectures-list::-webkit-scrollbar-track {
-    background: rgba(3, 9, 30, 0.3);
+    background: rgba(2, 5, 18, 0.3);
     border-radius: 3px;
 }
 
@@ -1220,13 +1220,13 @@ img {
 
 .modal-lectures-list {
     scrollbar-width: thin;
-    scrollbar-color: var(--bg-tertiary) rgba(3, 9, 30, 0.3);
+    scrollbar-color: var(--bg-tertiary) rgba(2, 5, 18, 0.3);
 }
 
 .modal-lectures-list .lecture-detail-item {
     margin-top: 0;
     padding: 20px;
-    background-color: rgba(3, 9, 30, 0.45);
+    background-color: rgba(2, 5, 18, 0.45);
     border: 1.5px solid rgba(203, 213, 225, 0.08);
     border-radius: 12px;
     transition: var(--transition);
@@ -1234,9 +1234,9 @@ img {
 
 .modal-lectures-list .lecture-detail-item:hover {
     border-color: rgba(203, 213, 225, 0.2);
-    background-color: rgba(3, 9, 30, 0.65);
+    background-color: rgba(2, 5, 18, 0.65);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(2, 12, 27, 0.4);
+    box-shadow: 0 8px 20px rgba(2, 12, 27, 0.45);
 }
 
 .modal-lectures-list .lecture-topic-title {
